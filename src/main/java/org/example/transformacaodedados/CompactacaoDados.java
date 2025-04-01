@@ -1,4 +1,4 @@
-package org.example.webscraping;
+package org.example.transformacaodedados;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,8 +7,8 @@ import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-public class CompactacaoAnexo {
-    public void compactar(String[] anexos, String anexoZip) throws IOException{
+public class CompactacaoDados {
+    public void compactarDados(String[] anexos, String anexoZip) throws IOException {
         try (FileOutputStream fileOut = new FileOutputStream(anexoZip);
              ZipOutputStream zipOut = new ZipOutputStream(fileOut)) {
 
